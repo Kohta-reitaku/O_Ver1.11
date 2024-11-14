@@ -71,6 +71,23 @@
     <footer>
         <p>&copy; 2024 学生情報プラットフォーム</p>
     </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var newsSection = document.getElementById('news');
+        var newsContent = '<p>新しいニュース記事が追加されました！</p>';
+        
+        // ニュースセクションに新しい内容を追加するボタン
+        var addButton = document.createElement('button');
+        addButton.textContent = 'ニュースを追加';
+        addButton.onclick = function() {
+            newsSection.innerHTML += newsContent;
+        };
+
+        // ボタンをセクションに追加
+        newsSection.appendChild(addButton);
+    });
+</script>
+
 </body>
 </html>
 
